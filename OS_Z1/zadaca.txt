@@ -1,3 +1,4 @@
 test
 testiranje nove
 linije
+nova linija i postavljanje
