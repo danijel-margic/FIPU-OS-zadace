@@ -1,10 +1,10 @@
 ### Zadatak 1
 
-pwd
-ls
-mkdir vjezba1 && cd vjezba1
-touch README.md 
-cd ..
+pwd 
+ls 
+mkdir vjezba1 && cd vjezba1 
+touch README.md  
+cd .. 
 
 ### Zadatak 2
 
