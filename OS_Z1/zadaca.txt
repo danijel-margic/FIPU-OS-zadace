@@ -25,3 +25,4 @@ mv vjezba3/backup/notes.txt vjezba3/backup/$USER && mv vjezba3/backup/script.sh 
     [ili da nam život bude lakši:
     mv vjezba3/backup/* vjezba3/backup/$USER]
 
+Zadatak 4
