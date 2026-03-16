@@ -1,6 +1,7 @@
 ---
 naslov: Prva zadaća iz kolegija Operacijski sustavi
 autor: Danijel Margić
+datum: 16. 3. 2026. godine
 ---
 
 ### Zadatak 1
