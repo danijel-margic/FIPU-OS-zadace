@@ -26,3 +26,9 @@ mv vjezba3/backup/notes.txt vjezba3/backup/$USER && mv vjezba3/backup/script.sh 
     mv vjezba3/backup/* vjezba3/backup/$USER]
 
 Zadatak 4
+
+mkdir vjezba4 && mkdir vjezba4/subfolder
+touch vjezba4/$HOSTNAME
+mv vjezba4/$HOSTNAME vjezba4/$USER
+mv vjezba4/$USER vjezba4/subfolder/
+rm /mnt/c/Users/Daniel/GitHub/FIPU-OS-zadace/vjezba4/subfolder/$USER
