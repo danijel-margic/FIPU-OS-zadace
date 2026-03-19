@@ -92,11 +92,13 @@ mkdir vjezba5 && touch vjezba5/${RANDOM}.num
 ls vjezba5/
 
 # Napravite kopiju datoteke nazvanu backup.num unutar direktorija vjezba5
+cp vjezba5/19333.num vjezba5/backup.num
+
+# Stvorite novi direktorij unutar roditeljskog direktorija vjezba5 i nazovite ga backup
+mkdir vjezba5/backup
+
+# Premjestite datoteku backup.num u direktorij backup
+mv vjezba5/backup.num vjezba5/backup/
 ```
 
-### Zadatak 6
 
-```bash
-# Stvorite novi direktorij unutar Documents direktorija na vašem OS-u koristeći apsolutnu putanju i nazovite ga vjezba6
-mkdir /mnt/c/Users/Daniel/Documents/vjezba6
-```
