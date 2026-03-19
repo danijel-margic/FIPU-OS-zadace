@@ -43,3 +43,7 @@ mv vjezba5/backup.num vjezba5/backup/
 
 Zadatak 6
 mkdir /mnt/c/Users/Daniel/Documents/vjezba6
+touch OS_script.md notes.txt && mkdir scripts
+mv OS_script.md scripts/
+mv notes.txt todo.txt
+cd scripts/ && rm ../todo.txt

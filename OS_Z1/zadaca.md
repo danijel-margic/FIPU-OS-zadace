@@ -101,4 +101,12 @@ mkdir vjezba5/backup
 mv vjezba5/backup.num vjezba5/backup/
 ```
 
+### Zadatak 6
 
+```bash
+# Stvorite novi direktorij unutar Documents direktorija na vašem OS-u koristeći apsolutnu putanju i nazovite ga vjezba6
+mkdir /mnt/c/Users/Daniel/Documents/vjezba6
+
+# Unutar direktorija, jednom naredbom touch stvorite 2 datoteke: OS_script.md i notes.txt i 1 direktorij scripts
+
+```
