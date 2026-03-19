@@ -108,5 +108,14 @@ mv vjezba5/backup.num vjezba5/backup/
 mkdir /mnt/c/Users/Daniel/Documents/vjezba6
 
 # Unutar direktorija, jednom naredbom touch stvorite 2 datoteke: OS_script.md i notes.txt i 1 direktorij scripts
+touch OS_script.md notes.txt && mkdir scripts
 
+# Prebacite datoteku OS_script.md u direktorij scripts
+mv OS_script.md scripts/
+
+# Preimenujte datoteku notes.txt u todo.txt
+mv notes.txt todo.txt
+
+# Prebacite se u direktorij scripts te koristeći relativnu putanju, obrišite datoteku todo.txt
+cd scripts/ && rm ../todo.txt
 ```
