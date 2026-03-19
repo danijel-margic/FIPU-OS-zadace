@@ -81,3 +81,22 @@ mv vjezba4/$USER vjezba4/subfolder/
 # Izbrišite datoteku USER koristeći apsolutnu putanju
 rm /mnt/c/Users/Daniel/GitHub/FIPU-OS-zadace/vjezba4/subfolder/$USER
 ```
+
+### Zadatak 5
+
+```bash
+# Unutar direktorija vjezba5 napravite datoteku naziva prema nasumičnom broju generiranom varijablom $RANDOM i s ekstenzijom .num
+mkdir vjezba5 && touch vjezba5/${RANDOM}.num
+
+# Kako ćete provjeriti da je datoteka stvorena? Koju naredbu ćete koristiti?
+ls vjezba5/
+
+# Napravite kopiju datoteke nazvanu backup.num unutar direktorija vjezba5
+```
+
+### Zadatak 6
+
+```bash
+# Stvorite novi direktorij unutar Documents direktorija na vašem OS-u koristeći apsolutnu putanju i nazovite ga vjezba6
+mkdir /mnt/c/Users/Daniel/Documents/vjezba6
+```

@@ -32,3 +32,14 @@ touch vjezba4/$HOSTNAME
 mv vjezba4/$HOSTNAME vjezba4/$USER
 mv vjezba4/$USER vjezba4/subfolder/
 rm /mnt/c/Users/Daniel/GitHub/FIPU-OS-zadace/vjezba4/subfolder/$USER
+
+Zadatak 5
+mkdir vjezba5 && touch vjezba5/${RANDOM}.num
+ls vjezba5/
+cp vjezba5/19333.num vjezba5/backup.num
+mkdir vjezba5/backup
+mv vjezba5/backup.num vjezba5/backup/
+
+
+Zadatak 6
+mkdir /mnt/c/Users/Daniel/Documents/vjezba6
