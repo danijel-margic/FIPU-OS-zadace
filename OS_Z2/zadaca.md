@@ -32,3 +32,18 @@ cat vjezba_2/data/style.css
 echo 'VJEZBE=OS' > vjezba_2/data/.env
 cat vjezba_2/data/.env
 ```
+
+### Zadatak 3
+
+```bash
+# Kopirajte sav sadržaj direktorija data u direktorij backup, uključujući i skrivene datoteke. Po potrebi upotrijebite više od jedne naredbe. Ispišite detalje o radnji.
+
+cp -av vjezba_2/data/. vjezba_2/backup/
+
+# Zatim se prebacite u direktorij data i napravite ispis sadržaja direktorija ../backup. Ispis mora:
+# biti detaljan,
+# uključivati skrivene datoteke,
+# biti sortiran po veličini (od najveće prema najmanjoj datoteci)
+
+cd vjezba_2/data/ && ls -laS ../backup
+```
