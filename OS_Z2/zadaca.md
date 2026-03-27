@@ -1,7 +1,7 @@
 ---
 naslov: Druga zadaća iz kolegija Operacijski sustavi
 autor: Danijel Margić
-datum: 25. 3. 2026. godine
+datum: 27. 3. 2026. godine
 ---
 
 ### Zadatak 2
