@@ -47,3 +47,32 @@ cp -av vjezba_2/data/. vjezba_2/backup/
 
 cd vjezba_2/data/ && ls -laS ../backup
 ```
+
+### Zadatak 4
+
+```bash
+# U direktoriju data izbrišite sve datoteke osim datoteke .env, pri čemu brisanje mora biti interaktivno. Ispišite detalje o radnji.
+
+rm -i vjezba_2/data/*
+
+# Nakon toga u direktorij data kopirajte sav sadržaj direktorija backup (samo sadržaj - bez direktorija), uključujući skrivene datoteke. Po potrebi upotrijebite jednu ili više naredbi, ali spriječite prepisivanje datoteka koje već postoje. Ispišite detalje o radnji.
+
+cp -avn vjezba_2/backup/. vjezba_2/data/
+
+# Na kraju detaljno ispišite sadržaj direktorija data tako da ispis:
+# uključuje skrivene datoteke,
+# ne uključuje posebne direktorije . i ..,
+# bude sortiran prema datumu zadnje izmjene (od najnovije prema najstarijoj datoteci),
+# prikazuje po jednu stavku u svakom retku.
+
+ls -lAt1 vjezba_2/data/
+
+# Kojom još naredbom možete ispisati sadržaj direktorija data? Napišite naredbom i primjer rezultata.
+
+tree -a vjezba_2/data/
+
+vjezba_2/data/
+├── .env
+├── script.js
+└── style.css
+```
