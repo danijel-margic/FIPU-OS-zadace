@@ -1,0 +1,73 @@
+1. zadatak
+sudo apt install python3
+mkdir python3 && touch python3/hello.py
+nano python3/hello.py
+python3 python3/hello.py
+
+PID (938): Jedinstveni identifikacijski broj koji je sustav dodijelio skripti za upravljanje procesom.
+USER (daniel): Vlasnik procesa; skripta se izvršava s pravima trenutnog korisnika.
+PRI (20): Stvarni prioritet kernela za dodjelu CPU vremena (računa se kao 20 + NI).
+NI (0): Zadani prioritet (Nice vrijednost). Skripta je pokrenuta bez modifikacija prioriteta.
+VIRT (15340): Virtualna memorija (oko 15 MB) rezervirana za interpreter, kod i biblioteke.
+RES (9792): Stvarna fizička RAM memorija (oko 9.7 MB) koju proces trenutno zauzima.
+SHR (6144): Dijeljena memorija (oko 6.1 MB) koju ovaj proces dijeli s ostalim Python programima.
+S (S): Stanje procesa. Kratica "S" (Sleep) znači da skripta miruje zbog naredbe time.sleep(1).
+CPU% (0.0): Trenutno zauzeće procesora. Iznosi 0% jer skripta većinu vremena spava.
+MEM% (0.1): Postotak ukupnog RAM-a (od 15.3 GB) koji skripta trenutno troši.
+TIME+ (0:00.01): Ukupno procesorsko vrijeme potrošeno od pokretanja (svega 1 stotinka sekunde).
+COMMAND: Točna naredba (python3 python3/hello.py) kojom je proces pokrenut u pozadini.
+
+kill -2 - SIGINT - šalje procesu signal za prekid, obično se koristi kada pritisnemo CTRL+C u terminalu
+kill -9 -SIGKILL prisilno prekida proces, ne može se obraditi
+kill -15 - SIGTERM - šalje procesu zahtjev za prekidom, proces može obraditi signal i završiti se na "ljubazan" način
+
+2. zadatak
+mkdir old_dir new_dir
+
+cd old_dir
+touch dat1.txt dat2.txt dat3.txt dat4.txt dat5.txt dat6.txt dat7.txt
+cd ..
+touch prebaci.sh
+nano prebac.sh
+./prebaci.sh
+./prebaci.sh &
+nice -n 10 ./prebaci.sh &
+nice -n 10 ./prebaci.sh &
+
+sudo groupadd devteam
+mkdir project
+sudo adduser korisnik1
+sudo adduser korisnik2
+sudo usermod -aG devteam korisnik1
+sudo usermod -aG devteam korisnik2
+sudo chown :devteam project
+getent group devteam
+chmod 775 project/
+
+
+vlasnik | grupa | ostali
+
+r w x   
+4+2+1 = 7
+
+rwxr-xr-x -> 755
+Vlasnik može čitati, pisati i izvršavati, dok članovi grupe i ostali 
+korisnici mogu samo čitati i izvršavati.
+
+rw-r--r-- -> 644
+Vlasnik može čitati i pisati, dok članovi grupe i ostali korisnici mogu samo čitati.
+
+rwx------ -> 700
+Vlasnik može čitati, pisati i izvršavati, dok članovi grupe i ostali korisnici ne mogu ništa.
+
+rw-rw-r-- -> 664
+Vlasnik i članovi grupe mogu čitati i pisati, dok ostali korisnici mogu samo čitati.
+
+rwxrwxrwx -> 777
+Svi korisnici na sustavu imaju sve dozvole (čitanje, pisanje i izvršavanje).
+
+r--r--r-- -> 444
+Svi korisnici na sustavu (vlasnik, grupa i ostali) mogu samo čitati sadržaj.
+
+rw------- -> 600
+Vlasnik može čitati i pisati, dok članovi grupe i ostali korisnici ne mogu ništa.

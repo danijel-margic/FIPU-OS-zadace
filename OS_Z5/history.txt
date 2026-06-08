@@ -1,0 +1,70 @@
+    1  history
+    2  sudo install python3
+    3  sudo apt install python3
+    4  mkdir python3 && touch python/hello.py
+    5  mkdir python3 && touch python3/hello.py
+    6  rmdri python3/
+    7  rmdir python3/
+    8  ls
+    9  cd OS_Z5
+   10  mkdir python3 && python3/hello.py
+   11  rmdir python3/
+   12  mkdir python3 && touch python3/hello.py
+   13  tree
+   14  nano python3/hello.py
+   15  python3 python3/hello.py
+   16  htop
+   17  python3 python3/hello.py
+   18  mkdir new_dir old_dir
+   19  ls
+   20  tree
+   21  cd old_dir/
+   22  ls
+   23  touch dat1.txt dat2.txt dat3.txt dat4.txt dat5.txt dat6.txt dat7.txt
+   24  cd ..
+   25  tree
+   26  touch prebaci.sh
+   27  nano prebaci.sh 
+   28  ./prebaci.sh 
+   29  nano prebaci.sh 
+   30  ./prebaci.sh 
+   31  ./prebaci.sh &
+   32  nano prebaci.sh 
+   33  nice -n 10 ./prebaci.sh &
+   34  sudo groupadd devteam
+   35  mkdir project
+   36  ls
+   37  sudo adduser korisnik1
+   38  sudo adduser2
+   39  sudo adduser korisnik2
+   40  sudo usermod -aG devteam korisnik1
+   41  sudo usermod -aG devteam kosisnik2
+   42  sudo usermod -aG devteam korisnik2
+   43  sudo chow :devteam ~/project
+   44  sudo chown :devteam ~/project
+   45  sudo chown :devteam project
+   46  ls
+   47  ls -l
+   48  ls -ld project/
+   49  ls -ld project
+   50  ls -1d project
+   51  getent group devteam
+   52  chmod 775 project/
+   53  ls -d
+   54  ls -l
+   55  stat -c project/
+   56  stat -c "Prava (Tekst): %A | Prava (Broj): %a" ~/project
+   57  stat -c "Prava (Tekst): %A | Prava (Broj): %a" project
+   58  stat -c project/
+   59  ls
+   60  stat -c prebaci.sh 
+   61  stat -c "%A" prebaci.sh 
+   62  stat -c "%a" prebaci.sh 
+   63  touch skripta_dozvola.sh
+   64  nano skripta_dozvola.sh 
+   65  touch test.txt
+   66  ./skripta_dozvola.sh rwx------ /mnt/c/Users/Daniel/GitHub/FIPU-OS-Z5
+   67  ./skripta_dozvola.sh rwx------ /mnt/c/Users/Daniel/GitHub/FIPU-OS-zadace/OS_Z5/test.txt 
+   68  ls -a
+   69  ls -l
+   70  history > history.txt
